@@ -30,44 +30,16 @@ main{
 }
 
 /*BARRA DE NAVVEGACION*/
-
-.navbar {
-    background-color: #7EC544;
-    display:grid;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
-}
-
-
-.navbar .logo {
-  height: 75px;
-  grid-column: 1 / 2;
-}
-
-.navbar .menu {
-    grid-column: 4 / 9;
+#menuNavegacion{
     display: flex;
-    justify-content:space-around;
-}
-
-.navbar .menu li {
-    list-style: none;
+    justify-content:right;
     text-transform: uppercase;
 }
 
-.navbar .menu a {
-    text-decoration: none;
-    color:rgb(8, 22, 8);
-    cursor: pointer;
-}
-
-.navbar .menu a:hover {
+#menuNavegacion a:hover{
     color:#F4F4F2;
     background-color: #037E86;
 } 
-.navbar .menuBar {
-    display: none;
-}
 
 /*INDEX*/
 
@@ -83,7 +55,7 @@ main{
 
 .lab .banner{
     grid-column: 7 / 11;
-    grid-row: 2 / 6;
+    grid-row: 3 / 7;
 }
 
 .lab  h1 {
@@ -100,29 +72,43 @@ main{
 }
 
 /*NOSOTROS*/
+.quienesSomos h2{
+    color: var(--main-bg-color);
+    font-size: 2rem;
+    padding-top: 20vh;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
 
 .wrapperNosotros{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2fr;
-    height: 100vh;
+    height: 50vh;
+    padding-bottom: 60vh;
 }
+
+
 .nosotrosIzquierda{
-    padding: 24px 32px;
+    padding: 0px 32px;
 }
 
 .nosotrosIzquierda p{
-    padding-bottom: 10px;
-}
-
-video{
-    max-width: 100%;
+    padding-bottom: 0px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .nosotrosDerecha{
     padding-right: 24px;
 }
 
+.carousel-inner{
+    width: 50vvw;
+}
+.carousel-caption p, h5{
+       color: #F4F4F2;
+}
+    
 /*sERVICIOS*/
 
 .servicios{
@@ -132,7 +118,13 @@ video{
 }
 .servicios h2{
     justify-self:left;
+    color: var(--main-bg-color);
+    font-size: 2rem;
+    padding-top: 20vh;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
 }
+
 .cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -146,13 +138,13 @@ video{
      border-radius: 30px;
      background-size: cover;
      overflow: hidden;
- }
+}
 
 .cardContent{
     list-style:none ;
 }
 
- .container{
+ .containercard{
      position: relative;
      display: flex;
      flex-direction: column;
@@ -160,29 +152,37 @@ video{
      border: 1px solid #ccc;
      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
      border-radius: 30px;
- }
+}
 
  .details{
      padding: 20px 10px;
- }
+}
 
  .details h3{
      font-weight: 600;
      font-size: 1.1em;
      margin: 10px 0 15px 0;
- }
+}
  .details li{
      font-size: 0.9em;
      line-height: 1.5;
-     padding: 15px;    
- }
+     padding: 15px;
+     font-family: 'Quicksand', sans-serif;
+}
 
 /*CERTIFICACIONES*/
 
 .certificaciones p{
-    padding: 24px 32px;  
+    padding: 24px 32px; 
+    font-family: 'Quicksand', sans-serif;
 }
-
+.certificaciones h2{
+    color: var(--main-bg-color);
+    font-size: 2rem;
+    padding-top: 20vh;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
 .logos{
     display: flex;
     flex-wrap: wrap;
@@ -198,13 +198,25 @@ video{
 
 /*CONTACTO*/
 
+.contactoContenido h2{
+    color: var(--main-bg-color);
+    font-size: 2rem;
+    padding-top: 20vh;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+#datosFooter p{
+    font-family: 'Quicksand', sans-serif; 
+    margin: 0 0 5px 0;
+}
  .contactoContenido p{
-     padding: 24px 32px;  
- }
+    padding: 10px 32px;
+    font-family: 'Quicksand', sans-serif; 
+}
 
 .wrapperContacto{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin:  96px 128px;
+    margin:  16px 128px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -217,6 +229,8 @@ video{
 .formContacto{
     background-color: #7EC544;
     padding: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
 }
 
 .datosContacto{
@@ -231,6 +245,8 @@ video{
 .datosContactoLista li{
     list-style: none;
     padding-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
 }
 
  .formContacto form input,
@@ -238,7 +254,7 @@ video{
      width: 100%;
      padding: 0.7em;
      border: none;
- }
+}
 
 .boton{
      background: #037E86;
@@ -246,17 +262,18 @@ video{
      text-transform: uppercase;
      padding: 1em;
      color:#F4F4F2;
-    }
+}
 
 .boton:hover {
         background-color: #F4F4F2;
         color: black;
-    }
-
+}
 /*PIE DE PAGINA*/
 
 .footer{
     background: var(--main-bg-color, green);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
     height: auto;
     padding-bottom: 10px;
     display: grid; 
@@ -268,17 +285,21 @@ video{
 #datosFooter{
     padding-top:20px;
     padding-left: 20px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #datosFooter h3{
     padding-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 800;
 }
 
 .footer .copyFooter{
     grid-template-areas: "copyFooter";
     font-size: 0.8em;
     align-self: flex-end;
-}
+}   
 
 .botonnl{
     border: 1px solid #F4F4F2;
@@ -290,7 +311,7 @@ video{
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     padding: 10px 20px;
- }  
+}  
  
 .botonnl:hover {
     background-color: #037E86;
@@ -311,7 +332,7 @@ video{
     flex-direction:column;
     position: relative;
     z-index:2;
-  }
+}
   
   /*circulo*/
   .redes .icono span{
@@ -325,18 +346,18 @@ video{
     border-radius:50%;
     text-align:center;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+}
 
 /*agrandar*/
   .redes .icono span i{
     font-size:25px;
     line-height:60px;
-  }
+}
 /*hover*/
   .redes .icono:hover span{
     color: #F4F4F2;
     background: #037E86;
-  }
+}
 
 
   /* Media query para celular*/
@@ -368,12 +389,12 @@ video{
     }
     .lab h2{
         font-size: 1em;
-}
+    }
 /*Nosotros*/
 .wrapperNosotros{
     grid-template-columns: 1fr;
     font-size: 0.8em;
-}
+    }
 
 /*servicios*/
     .cards{
