@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
@@ -12,23 +13,39 @@
     <title>QuimicLab</title>
 </head>
 <body>
-   
-        <header>
-            <nav class="navbar">
-                <a href="../index.html"><img src="../Imagenes/logo2.JPG" class="logo" alt="QuimicLab logo"></a>
-                <ul class="menu" id="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../html/nosotros.html">Nosotros</a></li>
-                    <li><a href="../html/servicios.html">Servicios</a></li>
-                    <li><a href="../html/certificaciones.html">Certificaciones</a></li>
-                    <li><a href="../html/contacto.html">Contacto</a></li>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #7EC544;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../Imagenes/logo2.JPG" height="80" alt="QuimicLab logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/certificaciones.html">Certificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                    </li>
                 </ul>
-               
-                </nav>
-        </header>
-
-    <main>
-        <section>
+              </div>
+        </nav>
+        
+    </header>
+        
+    <main class="quienesSomos">
+        <section >
                 <h2>Quienes somos</h2>
                 <div class="wrapperNosotros">
                     <div class="nosotrosIzquierda">
@@ -37,13 +54,61 @@
                         <p>Contamos con un completo sistema de calidad, que nos permite cumplir con las normativas vigentes para la realización de análisis de distintos tipos.</p>
                     </div>
                     <div class="nosotrosDerecha">
-                        <video controls src="../Videos/video_laboraotrio_01.mp4">Video not supported</video>
+                         <!-- Carousel -->
+                        <div id="laboratorioAlbum" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#laboratorioAlbum" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#laboratorioAlbum" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#laboratorioAlbum" data-bs-slide-to="2"></button>
+                            </div>
+                        
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="../Imagenes/instalaciones.jpg" alt="Planta" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Nuestras instalaciones</h5>
+                                    <p>Planta Rosario</p>
+                                  </div>
+                            </div>
+                            <div class="carousel-item"data-bs-interval="2000">
+                                <img src="../Imagenes/instalacioneslab.jpg" alt="Laboratorio" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Nuestro laboratorio</h5>
+                                    <p>Amplio y funcional</p>
+                                  </div>
+                            </div>
+                            
+                            <div class="carousel-item"data-bs-interval="2000">
+                                <img src="../Imagenes/grupodeanalistas .jpg" alt="Analistas" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Nuestro equipo de trabajo</h5>
+                                    <p>Comprometidos con la calidad</p>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#laboratorioAlbum" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#laboratorioAlbum" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        
                     </div>
                 </div>
         </section>
+
+        
         
     </main>
-        
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
 </body>
 
 <footer class="footer">
