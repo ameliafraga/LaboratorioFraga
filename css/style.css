@@ -105,71 +105,56 @@ main{
 .carousel-inner{
     width: 50vvw;
 }
-.carousel-caption p, h5{
+.carousel-caption p ,.carousel-caption h5{
        color: #F4F4F2;
 }
-    
-/*sERVICIOS*/
-
-.servicios{
-    display:grid;
-    place-items: center center;
   
-}
+/*SERVICIOS*/
 .servicios h2{
-    justify-self:left;
     color: var(--main-bg-color);
     font-size: 2rem;
     padding-top: 20vh;
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
 }
-
-.cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 20px;
-    grid-gap: 40px;  
+.servicios p{
+    padding: 24px 32px; 
+    font-family: 'Quicksand', sans-serif;
 }
 
- .cardImage {
-     width: 100%;
-     display: block;
-     border-radius: 30px;
-     background-size: cover;
-     overflow: hidden;
+#tituloCarta{
+    font-family: 'Quicksand', sans-serif;
+    color: #037E86;
+    font-size: 1.3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+#contenidoCartas{
+    font-family: 'Quicksand', sans-serif;
+}
+#itemsCarta{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+#botonInfo{
+    background: #037E86;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color:#F4F4F2;
 }
 
-.cardContent{
-    list-style:none ;
+#botonInfo:hover {
+        background-color: #F4F4F2;
+        color: black;
 }
-
- .containercard{
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     background-image:linear-gradient(to bottom, #56ab2f,#a8e063);
-     border: 1px solid #ccc;
-     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-     border-radius: 30px;
+#cartaIndividual{
+    border: 1px solid rgb(95, 94, 94);
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
 }
-
- .details{
-     padding: 20px 10px;
+#cartas{
+padding: 24px 32px;
 }
-
- .details h3{
-     font-weight: 600;
-     font-size: 1.1em;
-     margin: 10px 0 15px 0;
-}
- .details li{
-     font-size: 0.9em;
-     line-height: 1.5;
-     padding: 15px;
-     font-family: 'Quicksand', sans-serif;
-}
-
 /*CERTIFICACIONES*/
 
 .certificaciones p{
@@ -189,6 +174,7 @@ main{
     overflow-wrap: normal;
     justify-content: space-around;
     padding-bottom: 5em;
+    --animate-duration: 3s;
 }
 
 .logos img{
@@ -271,7 +257,7 @@ main{
 /*PIE DE PAGINA*/
 
 .footer{
-    background: var(--main-bg-color, green);
+    background-image:linear-gradient(to bottom, #56ab2f,#a8e063);
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     height: auto;
@@ -433,7 +419,6 @@ main{
     #menuNavegacion{
         display: none;
     }
-
     .lab .banner{
         grid-column: 2 / 7 ;
         grid-row: 4 / 6 ;

@@ -44,67 +44,87 @@
         </nav>
         
     </header>
-
-        <main class="servicios">
+    <main>
+        <div class="servicios">
             <h2>Servicios</h2>
-            <div class="cards">
-                
-                <article class="containercard">
-                    <img src="../Imagenes/Analisis_de_agua.jpg" alt="Análisis de agua" class="cardImage">
-                    <div class="details">
-                        <h3 class="cardTittle">Agua</h3>
-                        <ul class="cardContent">
-                            <li>Pruebas microbiológicas y fisicoquímicas.</li>
-                            <li>Pruebas de metales traza y aniones principales.</li>
-                            <li>Pruebas de toda la gama de compuestos orgánicos.</li>
-                        </ul>
+            <p>Ofrecemos una amplia gama de ensayos que se adaptan a los requerimientos específicos de cada industria. A continuación encontrará algunos de los servicios que brindamos, no dude en consultarnos por otros servicios.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4" id="cartas">
+            <div class="col"> 
+                <div class="card" style="width: 18rem;"id="cartaIndividual">
+                    <img src="../Imagenes/Analisis_de_agua.jpg" class="card-img-top" alt="Análisis de agua">
+                    <div class="card-body">
+                      <h5 class="card-title"id="tituloCarta">Agua</h5>
+                      <p class="card-text" id="contenidoCartas">Laboratorio equipado para realizar análisis fisicoquímicos y bateriológicos de aguas de consumo humano y de uso farmaceutico.</p>
                     </div>
-                 </article>
-               
-                
-                <article class="containercard">
-                    <img src="../Imagenes/Analisis_de_alimentos.jpg" alt="Análisis de alimentos" class="cardImage">
-                    <div class="details">
-                        <h3 class="cardTittle">Alimentos</h3>
-                        <ul class="cardContent">
-                            <li>Composición nutricional del alimento.</li>
-                            <li>Presencia/ausencia de alérgenos.</li>
-                            <li>Detección de organismos transgénicos y toxinas.</li>
-                        </ul>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" id="itemsCarta">Pruebas microbiológicas y fisicoquímicas.</li>
+                      <li class="list-group-item" id="itemsCarta">Pruebas de metales traza y aniones principales.</li>
+                      <li class="list-group-item" id="itemsCarta">Pruebas de toda la gama de compuestos orgánicos.</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="../html/contacto.html" class="btn btn-primary" id="botonInfo">Consultas/presupuestos</a>
                     </div>
-                </article>
-                
-                
-                <article class="containercard">
-                    <img src="../Imagenes/Analisis_farmaceuticos.jpeg" alt="Análisis Farmaceuticos" class="cardImage">
-                    <div class="details">
-                        <h3 class="cardTittle">Farmaceúticos y cosméticos</h3>
-                        <ul class="cardContent">
-                            <li>Controles de calidad sobre medicamentos y productos cosméticos terminados.</li>
-                            <li>Control de materias primas, insumos (envases, excipientes).</li>
-                            <li>Retesteo de patrones certificados o secundarios.</li>
-                        </ul>
-                    </div>
-                </article>
-                
-                
-                <article class="containercard">
-                    <img src="../Imagenes/Analisis_de_suelos-800x400 .jpg" alt="Análisis de suelos" class="cardImage">
-                    <div class="details">
-                        <h3 class="cardTittle">Suelos</h3>
-                        <ul class="cardContent">
-                            <li>Análisis fisicoquímico.</li>
-                            <li>Fósforo, nitrato, sulfato, boro, materia orgánica.</li>
-                            <li>Bases Intercambiables (Ca, Mg, KB, Na).</li>
-                            <li>Micronutrientes (Zn, Cu, Fe, Mn).</li>
-                        </ul>
-                    </div>
-                </article>
-                 
+              
+                </div>
             </div>
-      
-        </main>
-     
+            <div class="col">
+                <div class="card" style="width: 18rem;"id="cartaIndividual">
+                    <img src="../Imagenes/Analisis_de_alimentos.jpg" class="card-img-top" alt="Análisis de alimentos">
+                <div class="card-body">
+                  <h5 class="card-title"id="tituloCarta">Alimentos</h5>
+                  <p class="card-text"id="contenidoCartas">Consultoría y servicios de laboratorio a toda la cadena alimentaria, desde la producción primaria a la comercialización y exportación.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="itemsCarta" >Composición nutricional del alimento.</li>
+                  <li class="list-group-item" id="itemsCarta">Presencia/ausencia de alérgenos.</li>
+                  <li class="list-group-item" id="itemsCarta">Detección de organismos transgénicos y toxinas.</li>
+                </ul>
+                <div class="card-body">
+                    <a href="../html/contacto.html" class="btn btn-primary" id="botonInfo">Consultas/presupuestos</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;"id="cartaIndividual">
+                    <img src="../Imagenes/Analisis_farmaceuticos.jpeg" class="card-img-top" alt="Análisis farmaceuticos">
+                <div class="card-body">
+                  <h5 class="card-title"id="tituloCarta">Farmaceúticos y cosméticos</h5>
+                  <p class="card-text"id="contenidoCartas">Amplia gama de servicios analíticos para optimizar y acelerar el proceso de investigación, desarrollo y comercialización de fármacos.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="itemsCarta">Controles de calidad sobre medicamentos y productos cosméticos terminados.</li>
+                  <li class="list-group-item" id="itemsCarta">Control de materias primas, insumos (envases, excipientes).</li>
+                  <li class="list-group-item" id="itemsCarta">Retesteo de patrones certificados o secundarios.</li>
+                </ul>
+                <div class="card-body">
+                    <a href="../html/contacto.html" class="btn btn-primary" id="botonInfo">Consultas/presupuestos</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;"id="cartaIndividual">
+                    <img src="../Imagenes/Analisis_de_suelos-800x400 .jpg" class="card-img-top" alt="Análisis de suelos">
+                <div class="card-body">
+                  <h5 class="card-title"id="tituloCarta">Suelos</h5>
+                  <p class="card-text"id="contenidoCartas">Determinación de macronutrientes y micronutrientes como así también otros análisis complementarios que son empleados para el diagnóstico de las necesidades nutricionales de los cultivos.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="itemsCarta">Análisis fisicoquímico.</li>
+                  <li class="list-group-item" id="itemsCarta">Fósforo, nitrato, sulfato, boro, materia orgánica</li>
+                  <li class="list-group-item" id="itemsCarta">Bases Intercambiables (Ca, Mg, KB, Na).</li>
+                  <li class="list-group-item" id="itemsCarta">Micronutrientes (Zn, Cu, Fe, Mn).</li>
+                </ul>
+                <div class="card-body">
+                    <a href="../html/contacto.html" class="btn btn-primary" id="botonInfo">Consultas/presupuestos</a>
+                </div>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
 
         <footer class="footer">
             <div id="datosFooter">
