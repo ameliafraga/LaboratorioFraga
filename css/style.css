@@ -153,8 +153,9 @@ main{
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
 }
 #cartas{
-padding: 24px 32px;
+padding: 24px 32px 5em 32px;
 }
+
 /*CERTIFICACIONES*/
 
 .certificaciones p{
