@@ -1,0 +1,145 @@
+/* Media query para celular*/
+
+@media only screen and (max-width:480px) {
+    #menuNavegacion{
+        display: none;
+    }
+    .navbar .logo{
+        width: 150%;
+        height: auto;
+    }
+
+    .lab .banner{
+        grid-column: 2 / 7 ;
+        grid-row: 2 / 4 ;
+    }
+    .lab  h1 {
+        font-size: 2.5rem
+    }
+    .lab h2{
+        font-size: 1em;
+    }
+/*Nosotros*/
+.wrapperNosotros{
+    grid-template-columns: 1fr;
+    font-size: 0.8em;
+    }
+
+/*servicios*/
+    .cards{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        grid-gap: 40px;
+    }
+    .details li{
+        line-height: 1.1;
+        padding: 8px;
+    }
+
+
+/*contacto*/
+    .wrapperContacto{
+        grid-template-columns: 1fr;
+    }
+    .datosContacto{
+        font-size: 1em;
+    }
+/*footer*/
+    #novedadesFooter{
+        display: none;
+    }
+    #datosFooter{
+        font-size: 0.8em;
+    }
+    .redes .icono span{
+        height: 50px;
+        width: 50px;
+    }
+    .redes .icono span i{
+        font-size:20px;
+        line-height:50px;
+    }
+
+    .footer .copyFooter p{
+        font-size: 0.6em;
+    }
+}
+
+/* Media query para tablet*/
+
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    #menuNavegacion{
+        display: none;
+    }
+    .lab .banner{
+        grid-column: 2 / 7 ;
+        grid-row: 4 / 6 ;
+    }
+    .lab  h1 {
+        font-size: 3rem
+    }
+    .lab h2{
+        font-size: 1em;
+    }
+
+
+/*Nosotros*/
+    .wrapperNosotros{
+        grid-template-columns: 1fr;
+        height: 120vh;
+    }
+
+/*servicios*/
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        grid-gap: 40px;
+    }
+    .details li{
+        line-height: 1.1;
+        padding: 8px;
+    }
+
+/*servicios*/
+    .logos{
+        flex-direction: column;
+        align-items: center;
+        
+    } 
+    .logos img{
+        max-width: 50%;
+        padding-bottom: 0.5em;
+    } 
+
+    
+  /*contacto*/
+  .wrapperContacto{
+    grid-template-columns: 1fr;
+    }  
+
+    .datosContacto{
+        font-size: 1em;
+    }
+
+/*footer*/
+    #novedadesFooter{
+        display: none;
+    }
+    #datosFooter{
+        font-size: 0.8em;
+    }
+
+    .redes .icono span{
+        height: 50px;
+        width: 50px;
+    }
+    .redes .icono span i{
+        font-size:20px;
+        line-height:50px;
+    }
+
+   
+    .footer .copyFooter{
+        font-size: 0.5em;
+    }
+}
