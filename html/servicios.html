@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Imagenes/favicon (1).ico" type="image/x-icon">
+    
+    <title>QuimicLab</title>
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #7EC544;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../Imagenes/logo2.JPG" height="80" alt="QuimicLab logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/certificaciones.html">Certificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+              </div>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrecemos una amplia gama de ensayos que se adaptan a los requerimientos específicos de cada industria. A continuación encontrará algunos de los servicios que brindamos, no dude en consultarnos por otros servicios.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4" id="cartas">
+            <div class="col"> 
+                <div class="card h-100 " style="width: 18rem;"id="cartaIndividual">
+                    <img src="../Imagenes/Analisis_de_agua.jpg" class="card-img-top" alt="Análisis de agua">
+                    <div class="card-body">
+                      <h5 class="card-title"id="tituloCarta">Agua</h5>
+                      <p class="card-text" id="contenidoCartas">Laboratorio equipado para realizar análisis fisicoquímicos y bateriológicos de aguas de consumo humano y de uso farmaceutico.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" id="itemsCarta">Pruebas microbiológicas y fisicoquímicas.</li>
+                      <li class="list-group-item" id="itemsCarta">Pruebas de metales traza y aniones principales.</li>
+                      <li class="list-group-item" id="itemsCarta">Pruebas de toda la gama de compuestos orgánicos.</li>
+                    </ul>
+                        <div class="card-footer">
+                            <a href="../html/contacto.html" class="btn btn-primary" id="botonInfo">Consultas/presupuestos</a>
+                        </div>
+                    
+              
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 " style="width: 18rem;"id="cartaIndividual">
+                    <img src="../Imagenes/Analisis_de_alimentos.jpg" class="card-img-top" alt="Análisis de alimentos">
+                <div class="card-body">
+                  <h5 class="card-title"id="tituloCarta">Alimentos</h5>
+                  <p class="card-text"id="contenidoCartas">Consultoría y servicios de laboratorio a toda la cadena alimentaria, desde la producción primaria a la comercialización y exportación.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="itemsCarta" >Composición nutricional del alimento.</li>
+                  <li class="list-group-item" id="itemsCarta">Presencia/ausencia de alérgenos.</li>
+                  <li class="list-group-item" id="itemsCarta">Detección de organismos transgénicos y toxinas.</li>
+                </ul>
+                <div class="card-footer">
+                    <a href="../html/contacto.html" class="btn btn-primary" id="botonInfo">Consultas/presupuestos</a>
+                </div>    
+                
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 18rem;"id="cartaIndividual">
+                    <img src="../Imagenes/Analisis_farmaceuticos.jpeg" class="card-img-top" alt="Análisis farmaceuticos">
+                <div class="card-body">
+                  <h5 class="card-title"id="tituloCarta">Farmaceúticos y cosméticos</h5>
+                  <p class="card-text"id="contenidoCartas">Amplia gama de servicios analíticos para optimizar y acelerar el proceso de investigación, desarrollo y comercialización de fármacos.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="itemsCarta">Controles de calidad sobre medicamentos y productos cosméticos terminados.</li>
+                  <li class="list-group-item" id="itemsCarta">Control de materias primas, insumos (envases, excipientes).</li>
+                  <li class="list-group-item" id="itemsCarta">Retesteo de patrones certificados o secundarios.</li>
+                </ul>
+                    <div class="card-footer">
+                        <a href="../html/contacto.html" class="btn btn-primary" id="botonInfo">Consultas/presupuestos</a>
+                    </div>
+              
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 18rem;"id="cartaIndividual">
+                    <img src="../Imagenes/Analisis_de_suelos-800x400 .jpg" class="card-img-top" alt="Análisis de suelos">
+                <div class="card-body">
+                  <h5 class="card-title"id="tituloCarta">Suelos</h5>
+                  <p class="card-text"id="contenidoCartas">Determinación de macronutrientes y micronutrientes como así también otros análisis complementarios que son empleados para el diagnóstico de las necesidades nutricionales de los cultivos.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="itemsCarta">Análisis fisicoquímico.</li>
+                  <li class="list-group-item" id="itemsCarta">Fósforo, nitrato, sulfato, boro, materia orgánica</li>
+                  <li class="list-group-item" id="itemsCarta">Bases Intercambiables (Ca, Mg, KB, Na).</li>
+                  <li class="list-group-item" id="itemsCarta">Micronutrientes (Zn, Cu, Fe, Mn).</li>
+                </ul>
+                <div class="card-footer">
+                    <a href="../html/contacto.html" class="btn btn-primary" id="botonInfo">Consultas/presupuestos</a>
+                </div>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
+
+        <footer class="footer">
+            <div id="datosFooter">
+                <h3>Información de contacto</h3>
+                <p><i class="fa fa-envelope"></i> contacto@quimiclab.com.ar</p>
+                <p><i class="fa fa-location-arrow"></i> Av. Pellegrini 1100. Rosario. Santa Fe. Argentina</p> 
+                <p><i class="fa fa-phone"></i> 0341-4555555</p>
+                <div class="redes">
+                    <div class="icono facebook">
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </div>
+                    <div class="icono Linkedin">
+                        <span><i class="fab fa-linkedin-in"></i></span>
+                    </div>
+                    <div class="icono Instagram">
+                        <span><i class="fab fa-instagram"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="novedadesFooter">
+                <div class="novedades">¿Desea recibir novedades? </div>
+                <form action="#">
+                <input class= "botonnl" type="text" placeholder="Ingrese su email">
+                <input class= "botonnl" type="submit" name="" value="Enviar">
+                </form>
+            </div>
+            <div class="copyFooter">
+                <p>&copy;QuimicLab by Amelia Fraga. 2022</p>
+            </div>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

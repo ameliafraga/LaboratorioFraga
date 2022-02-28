@@ -1,0 +1,280 @@
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font: normal 18px "Quicksand", sans-serif; }
+
+h2 {
+  color: #7EC544;
+  font-size: 2rem;
+  padding: 32px 24px; }
+
+p {
+  letter-spacing: 0.05em;
+  line-height: 1.5; }
+
+main {
+  background-color: #F4F4F2; }
+
+/*BARRA DE NAVEGACION*/
+#menuNavegacion {
+  display: flex;
+  justify-content: right;
+  text-transform: uppercase; }
+  #menuNavegacion a:hover {
+    color: #F4F4F2;
+    background-color: #037E86; }
+
+/*INDEX*/
+.lab {
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white), url(../Imagenes/laboratorio6.jpeg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr); }
+  .lab .banner {
+    grid-column: 7 / 11;
+    grid-row: 3 / 7; }
+  .lab h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #7EC544; }
+  .lab h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: black; }
+
+/*NOSOTROS*/
+.quienesSomos h2 {
+  color: #7EC544;
+  font-size: 2rem;
+  padding-top: 20vh;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 800; }
+
+.wrapperNosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr;
+  height: 50vh;
+  padding-bottom: 60vh; }
+
+.nosotrosIzquierda {
+  padding: 0px 32px; }
+  .nosotrosIzquierda p {
+    padding-bottom: 0px;
+    font: normal 18px "Quicksand", sans-serif; }
+
+.nosotrosDerecha {
+  padding-right: 24px; }
+
+.carousel-inner {
+  width: 50vvw; }
+
+.carousel-caption p {
+  color: #F4F4F2; }
+
+.carousel-caption h5 {
+  color: #F4F4F2; }
+
+/*SERVICIOS*/
+.servicios h2 {
+  color: #7EC544;
+  font-size: 2rem;
+  padding-top: 20vh;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 800; }
+
+.servicios p {
+  padding: 24px 32px;
+  font: normal 18px "Quicksand", sans-serif; }
+
+#tituloCarta {
+  font-family: 'Quicksand', sans-serif;
+  color: #037E86;
+  font-size: 1.3em;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+#contenidoCartas {
+  font: normal 18px "Quicksand", sans-serif; }
+
+#itemsCarta {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600; }
+
+#botonInfo {
+  background: #037E86;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  color: #F4F4F2;
+  align-items: center; }
+  #botonInfo:hover {
+    background-color: #F4F4F2;
+    color: black; }
+
+#cartaIndividual {
+  border: 1px solid #5f5e5e;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); }
+
+#cartas {
+  padding: 24px 32px 5em 32px; }
+
+/*CERTIFICACIONES*/
+.certificaciones p {
+  padding: 24px 32px;
+  font: normal 18px "Quicksand", sans-serif; }
+
+.certificaciones h2 {
+  color: #7EC544;
+  font-size: 2rem;
+  padding-top: 20vh;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 800; }
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
+  justify-content: space-around;
+  padding-bottom: 5em;
+  --animate-duration: 3s; }
+  .logos img {
+    padding: 0.5em; }
+
+/*CONTACTO*/
+.contactoContenido h2 {
+  color: #7EC544;
+  font-size: 2rem;
+  padding-top: 20vh;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 800; }
+
+.contactoContenido p {
+  padding: 10px 32px;
+  font: normal 18px "Quicksand", sans-serif; }
+
+#datosFooter p {
+  font: normal 18px "Quicksand", sans-serif;
+  margin: 0 0 5px 0; }
+
+.wrapperContacto {
+  padding: 16px 128px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.contactoContainer {
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  padding: 1.5em; }
+
+.formContacto {
+  background-color: #7EC544;
+  padding: 1.5em;
+  font: normal 18px "Quicksand", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+  .formContacto form input {
+    width: 100%;
+    padding: 0.7em;
+    border: none; }
+  .formContacto form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: none; }
+
+.datosContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px solid #7EC544;
+  font-size: 1.2em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+
+.datosContactoLista li {
+  list-style: none;
+  padding-bottom: 20px;
+  font: normal 18px "Quicksand", sans-serif; }
+
+.boton {
+  background: #037E86;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  color: #F4F4F2; }
+  .boton:hover {
+    background-color: #F4F4F2;
+    color: black; }
+
+/*PIE DE PAGINA*/
+.footer {
+  background-image: linear-gradient(to bottom, #56ab2f, #a8e063);
+  font: normal 18px "Quicksand", sans-serif;
+  height: auto;
+  padding-bottom: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "datosFooter novedadesFooter copyFooter"; }
+  .footer .copyFooter {
+    grid-template-areas: "copyFooter";
+    font-size: 0.8em;
+    align-self: flex-end; }
+
+#datosFooter {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: 'Quicksand', sans-serif; }
+  #datosFooter h3 {
+    padding-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 800; }
+
+.botonnl {
+  border: 1px solid #F4F4F2;
+  border-radius: 30px;
+  margin-top: 10px;
+  background: none;
+  color: black;
+  font-size: 1em;
+  transition-duration: 0.4s;
+  padding: 10px 20px; }
+  .botonnl:hover {
+    background-color: #037E86;
+    color: #F4F4F2; }
+
+/*separar, circulo, agrandar, hover*/
+.redes {
+  display: inline-flex; }
+  .redes .icono {
+    margin: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2; }
+    .redes .icono span {
+      position: relative;
+      z-index: 2;
+      height: 60px;
+      width: 60px;
+      display: block;
+      background: #7EC544;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+      .redes .icono span i {
+        font-size: 25px;
+        line-height: 60px; }
+    .redes .icono:hover span {
+      color: #F4F4F2;
+      background: #037E86; }
