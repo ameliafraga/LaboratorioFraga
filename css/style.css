@@ -12,7 +12,10 @@ html{
     
 }
 :root{
-        --main-bg-color: #7EC544;
+        --main-color: #7EC544;
+        --secondary-color: #037E86;
+        --bg-color: #F4F4F2;
+        
 }
 
 h2{
@@ -26,7 +29,7 @@ p {
     line-height: 1.5;
 }
 main{
-    background-color: #F4F4F2;
+    background-color: var(--bg-color);
 }
 
 /*BARRA DE NAVVEGACION*/
@@ -37,8 +40,8 @@ main{
 }
 
 #menuNavegacion a:hover{
-    color:#F4F4F2;
-    background-color: #037E86;
+    color:var(--bg-color);
+    background-color: var(--secondary-color);
 } 
 
 /*INDEX*/
@@ -62,7 +65,7 @@ main{
     font-family: 'Roboto', sans-serif;
     font-size: 5rem;
     font-weight: 900;
-    color: #7EC544;  
+    color: var(--main-color);  
 }
 
 .lab  h2{
@@ -73,7 +76,7 @@ main{
 
 /*NOSOTROS*/
 .quienesSomos h2{
-    color: var(--main-bg-color);
+    color: var(--main-color)
     font-size: 2rem;
     padding-top: 20vh;
     font-family: 'Quicksand', sans-serif;
@@ -106,12 +109,12 @@ main{
     width: 50vvw;
 }
 .carousel-caption p ,.carousel-caption h5{
-       color: #F4F4F2;
+       color: var(--bg-color);
 }
   
 /*SERVICIOS*/
 .servicios h2{
-    color: var(--main-bg-color);
+    color: var(--main-color);
     font-size: 2rem;
     padding-top: 20vh;
     font-family: 'Quicksand', sans-serif;
@@ -124,7 +127,7 @@ main{
 
 #tituloCarta{
     font-family: 'Quicksand', sans-serif;
-    color: #037E86;
+    color: var(--secondary-color);
     font-size: 1.3em;
     font-weight: 800;
     text-transform: uppercase;
@@ -137,15 +140,17 @@ main{
     font-weight: 600;
 }
 #botonInfo{
-    background: #037E86;
+    background: var(--secondary-color);
     border: 0;
     text-transform: uppercase;
     padding: 1em;
     color:#F4F4F2;
+   
+    align-items: center;
 }
 
 #botonInfo:hover {
-        background-color: #F4F4F2;
+        background-color: var(--bg-color);
         color: black;
 }
 #cartaIndividual{
@@ -163,7 +168,7 @@ padding: 24px 32px 5em 32px;
     font-family: 'Quicksand', sans-serif;
 }
 .certificaciones h2{
-    color: var(--main-bg-color);
+    color: var(--main-color);
     font-size: 2rem;
     padding-top: 20vh;
     font-family: 'Quicksand', sans-serif;
@@ -186,7 +191,7 @@ padding: 24px 32px 5em 32px;
 /*CONTACTO*/
 
 .contactoContenido h2{
-    color: var(--main-bg-color);
+    color: var(--main-color);
     font-size: 2rem;
     padding-top: 20vh;
     font-family: 'Quicksand', sans-serif;
@@ -213,7 +218,7 @@ padding: 24px 32px 5em 32px;
 }
 
 .formContacto{
-    background-color: #7EC544;
+    background-color: var(--main-color);
     padding: 1.5em;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
@@ -225,7 +230,7 @@ padding: 24px 32px 5em 32px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 5px solid #7EC544 ;
+    border: 5px solid var(--main-color) ;
     font-size: 1.2em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -245,15 +250,15 @@ padding: 24px 32px 5em 32px;
 }
 
 .boton{
-     background: #037E86;
+     background: var(--secondary-color);
      border: 0;
      text-transform: uppercase;
      padding: 1em;
-     color:#F4F4F2;
+     color:var(--bg-color);
 }
 
 .boton:hover {
-        background-color: #F4F4F2;
+        background-color: var(--bg-color);
         color: black;
 }
 /*PIE DE PAGINA*/
@@ -290,20 +295,19 @@ padding: 24px 32px 5em 32px;
 }   
 
 .botonnl{
-    border: 1px solid #F4F4F2;
+    border: 1px solid var(--bg-color);
     border-radius: 30px;
     margin-top: 10px;
     background: none;
     color: black;
     font-size: 1em;
-    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     padding: 10px 20px;
 }  
  
 .botonnl:hover {
-    background-color: #037E86;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
 }
 
 .redes{
@@ -329,7 +333,7 @@ padding: 24px 32px 5em 32px;
     height: 60px;
     width: 60px;
     display:block;
-    background: var(--main-bg-color);
+    background: var(--main-color);
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     border-radius:50%;
     text-align:center;
@@ -343,8 +347,8 @@ padding: 24px 32px 5em 32px;
 }
 /*hover*/
   .redes .icono:hover span{
-    color: #F4F4F2;
-    background: #037E86;
+    color: var(--bg-color);
+    background: var(--secondary-color);
 }
 
 
