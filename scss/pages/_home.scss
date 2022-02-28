@@ -1,0 +1,25 @@
+/*INDEX*/
+.lab {
+	height: 100vh;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(../Imagenes/laboratorio6.jpeg);
+	background-size: cover;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	.banner {
+		grid-column: 7 / 11;
+		grid-row: 3 / 7;
+	}
+	h1 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 5rem;
+		font-weight: 900;
+		color: $main-color;
+	}
+	h2 {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		color: black;
+	}
+}

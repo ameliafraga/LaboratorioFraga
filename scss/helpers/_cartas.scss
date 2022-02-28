@@ -1,0 +1,33 @@
+#tituloCarta {
+	font-family: 'Quicksand', sans-serif;
+	color: $secondary-color;
+	font-size: 1.3em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+#contenidoCartas {
+	font: $regular-font;
+}
+#itemsCarta {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+}
+#botonInfo {
+	background: $secondary-color;
+	border: 0;
+	text-transform: uppercase;
+	padding: 1em;
+	color: $bg-color;
+	align-items: center;
+	&:hover {
+		background-color: $bg-color;
+		color: black;
+	}
+}
+#cartaIndividual {
+	border: 1px solid rgb(95, 94, 94);
+	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+#cartas {
+	padding: 24px 32px 5em 32px;
+}

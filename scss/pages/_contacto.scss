@@ -1,0 +1,74 @@
+/*CONTACTO*/
+.contactoContenido {
+	h2 {
+		color: $main-color;
+		font-size: 2rem;
+		padding-top: 20vh;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 800;
+	}
+	p {
+		padding: 10px 32px;
+		font: $regular-font;
+	}
+}
+#datosFooter {
+	p {
+		font: $regular-font;
+		margin: 0 0 5px 0;
+	}
+}
+.wrapperContacto {
+	padding: 16px 128px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.contactoContainer {
+	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+	padding: 1.5em;
+}
+.formContacto {
+	background-color: $main-color;
+	padding: 1.5em;
+	font: $regular-font;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	form {
+		input {
+			width: 100%;
+			padding: 0.7em;
+			border: none;
+		}
+		textarea {
+			width: 100%;
+			padding: 0.7em;
+			border: none;
+		}
+	}
+}
+.datosContacto {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 5px solid $main-color;
+	font-size: 1.2em;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.datosContactoLista {
+	li {
+		list-style: none;
+		padding-bottom: 20px;
+		font: $regular-font;
+	}
+}
+.boton {
+	background: $secondary-color;
+	border: 0;
+	text-transform: uppercase;
+	padding: 1em;
+	color: $bg-color;
+	&:hover {
+		background-color: $bg-color;
+		color: black;
+	}
+}

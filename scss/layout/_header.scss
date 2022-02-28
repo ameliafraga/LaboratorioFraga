@@ -1,0 +1,13 @@
+/*BARRA DE NAVEGACION*/
+
+#menuNavegacion {
+	display: flex;
+	justify-content: right;
+	text-transform: uppercase;
+	a {
+		&:hover {
+			color: $bg-color;
+			background-color: $secondary-color;
+		}
+	}
+}
