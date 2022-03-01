@@ -390,6 +390,7 @@ padding: 24px 32px 5em 32px;
 /*contacto*/
     .wrapperContacto{
         grid-template-columns: 1fr;
+        padding: 24px 32px;
     }
     .datosContacto{
         font-size: 1em;
