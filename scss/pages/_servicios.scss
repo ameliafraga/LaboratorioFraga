@@ -1,15 +1,26 @@
 /*SERVICIOS*/
 
 .servicios {
-	h2 {
-		color: $main-color;
-		font-size: 2rem;
-		padding-top: 20vh;
-		font-family: 'Quicksand', sans-serif;
-		font-weight: 800;
+	h3 {
+		@include tituloTres;
 	}
 	p {
 		padding: 24px 32px;
 		font: $regular-font;
+	}
+}
+
+
+.cards{
+	@include celular{
+	grid-template-columns: 1fr;
+	padding: 20px;
+	grid-gap: 40px;
+	}
+}
+.details li{
+	@include celular{
+	line-height: 1.1;
+	padding: 8px;
 	}
 }

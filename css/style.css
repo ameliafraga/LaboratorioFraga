@@ -1,16 +1,13 @@
-/*General*/
+#botonInfo, .boton, .botonnl {
+  border: 1px solid #888;
+  text-transform: uppercase;
+  padding: 1em;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-html {
-  font: normal 18px "Quicksand", sans-serif; }
-
-h2 {
-  color: #7EC544;
-  font-size: 2rem;
-  padding: 32px 24px; }
 
 p {
   letter-spacing: 0.05em;
@@ -21,12 +18,15 @@ main {
 
 /*BARRA DE NAVEGACION*/
 #menuNavegacion {
-  display: flex;
-  justify-content: right;
   text-transform: uppercase; }
   #menuNavegacion a:hover {
     color: #F4F4F2;
     background-color: #037E86; }
+
+@media only screen and (max-width: 480px) {
+  .navbar .logo {
+    width: 150%;
+    height: auto; } }
 
 /*INDEX*/
 .lab {
@@ -40,21 +40,41 @@ main {
   .lab .banner {
     grid-column: 7 / 11;
     grid-row: 3 / 7; }
+    @media only screen and (max-width: 480px) {
+      .lab .banner {
+        grid-column: 2 / 7;
+        grid-row: 6 / 9; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      .lab .banner {
+        grid-column: 2 / 7;
+        grid-row: 5 / 7; } }
   .lab h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     font-size: 5rem;
     font-weight: 900;
     color: #7EC544; }
+    @media only screen and (max-width: 480px) {
+      .lab h1 {
+        font-size: 2.5rem; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      .lab h1 {
+        font-size: 3rem; } }
   .lab h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     font-weight: 300;
     color: black; }
+    @media only screen and (max-width: 480px) {
+      .lab h2 {
+        font-size: 1rem; } }
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      .lab h2 {
+        font-size: 1rem; } }
 
 /*NOSOTROS*/
-.quienesSomos h2 {
+.quienesSomos h3 {
   color: #7EC544;
   font-size: 2rem;
-  padding-top: 20vh;
+  padding: 20vh 32px 24px 32px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 800; }
 
@@ -64,6 +84,15 @@ main {
   grid-template-rows: 2fr;
   height: 50vh;
   padding-bottom: 60vh; }
+  @media only screen and (max-width: 480px) {
+    .wrapperNosotros {
+      grid-template-columns: 1fr;
+      font-size: 0.8rem;
+      height: 100vh; } }
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapperNosotros {
+      grid-template-columns: 1fr;
+      height: 120vh; } }
 
 .nosotrosIzquierda {
   padding: 0px 32px; }
@@ -84,16 +113,27 @@ main {
   color: #F4F4F2; }
 
 /*SERVICIOS*/
-.servicios h2 {
+.servicios h3 {
   color: #7EC544;
   font-size: 2rem;
-  padding-top: 20vh;
+  padding: 20vh 32px 24px 32px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 800; }
 
 .servicios p {
   padding: 24px 32px;
   font: normal 18px "Quicksand", sans-serif; }
+
+@media only screen and (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-gap: 40px; } }
+
+@media only screen and (max-width: 480px) {
+  .details li {
+    line-height: 1.1;
+    padding: 8px; } }
 
 #tituloCarta {
   font-family: 'Quicksand', sans-serif;
@@ -111,11 +151,7 @@ main {
 
 #botonInfo {
   background: #037E86;
-  border: 0;
-  text-transform: uppercase;
-  padding: 1em;
-  color: #F4F4F2;
-  align-items: center; }
+  color: #F4F4F2; }
   #botonInfo:hover {
     background-color: #F4F4F2;
     color: black; }
@@ -127,17 +163,39 @@ main {
 #cartas {
   padding: 24px 32px 5em 32px; }
 
+@media only screen and (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-gap: 40px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    grid-gap: 40px; } }
+
+@media only screen and (max-width: 480px) {
+  .details li {
+    line-height: 1.1;
+    padding: 8px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .details li {
+    line-height: 1.1;
+    padding: 8px; } }
+
 /*CERTIFICACIONES*/
+.certificaciones h3 {
+  color: #7EC544;
+  font-size: 2rem;
+  padding: 20vh 32px 24px 32px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 800; }
+
 .certificaciones p {
   padding: 24px 32px;
   font: normal 18px "Quicksand", sans-serif; }
-
-.certificaciones h2 {
-  color: #7EC544;
-  font-size: 2rem;
-  padding-top: 20vh;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 800; }
 
 .logos {
   display: flex;
@@ -146,14 +204,22 @@ main {
   justify-content: space-around;
   padding-bottom: 5em;
   --animate-duration: 3s; }
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .logos {
+      flex-direction: column;
+      align-items: center; } }
   .logos img {
-    padding: 0.5em; }
+    padding: 0.5rem; }
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      .logos img {
+        max-width: 50%;
+        padding-bottom: 0.5rem; } }
 
 /*CONTACTO*/
-.contactoContenido h2 {
+.contactoContenido h3 {
   color: #7EC544;
   font-size: 2rem;
-  padding-top: 20vh;
+  padding: 20vh 32px 24px 32px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 800; }
 
@@ -166,11 +232,19 @@ main {
   margin: 0 0 5px 0; }
 
 .wrapperContacto {
-  padding: 16px 128px;
+  padding: 16px 180px;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 480px) {
+    .wrapperContacto {
+      grid-template-columns: 1fr;
+      padding: 24px 10px; } }
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapperContacto {
+      grid-template-columns: 1fr; } }
 
 .contactoContainer {
+  border: 1px solid #5f5e5e;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   padding: 1.5em; }
 
@@ -178,7 +252,8 @@ main {
   background-color: #7EC544;
   padding: 1.5em;
   font: normal 18px "Quicksand", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+  border: 1px solid #5f5e5e;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); }
   .formContacto form input {
     width: 100%;
     padding: 0.7em;
@@ -193,26 +268,42 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 5px solid #7EC544;
-  font-size: 1.2em;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+  border: 1px solid #5f5e5e;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  font-size: 1.2em; }
+  @media only screen and (max-width: 480px) {
+    .datosContacto {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .datosContacto {
+      font-size: 1em; } }
 
 .datosContactoLista li {
   list-style: none;
   padding-bottom: 20px;
+  padding-top: 10px;
   font: normal 18px "Quicksand", sans-serif; }
 
 .boton {
   background: #037E86;
-  border: 0;
-  text-transform: uppercase;
-  padding: 1em;
   color: #F4F4F2; }
   .boton:hover {
     background-color: #F4F4F2;
     color: black; }
 
 /*PIE DE PAGINA*/
+@media only screen and (max-width: 480px) {
+  #novedadesFooter {
+    display: none; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #novedadesFooter {
+    display: none; } }
+
+@media only screen and (max-width: 480px) {
+  .footer .copyFooter p {
+    font-size: 0.6rem; } }
+
 .footer {
   background-image: linear-gradient(to bottom, #56ab2f, #a8e063);
   font: normal 18px "Quicksand", sans-serif;
@@ -225,19 +316,27 @@ main {
     grid-template-areas: "copyFooter";
     font-size: 0.8em;
     align-self: flex-end; }
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      .footer .copyFooter {
+        font-size: 0.5rem; } }
 
 #datosFooter {
   padding-top: 20px;
   padding-left: 20px;
   font-family: 'Quicksand', sans-serif; }
-  #datosFooter h3 {
+  @media only screen and (max-width: 480px) {
+    #datosFooter {
+      font-size: 0.8rem; } }
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    #datosFooter {
+      font-size: 0.8rem; } }
+  #datosFooter h4 {
     padding-bottom: 10px;
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 800; }
 
 .botonnl {
-  border: 1px solid #F4F4F2;
   border-radius: 30px;
   margin-top: 10px;
   background: none;
@@ -272,9 +371,25 @@ main {
       border-radius: 50%;
       text-align: center;
       transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+      @media only screen and (max-width: 480px) {
+        .redes .icono span {
+          height: 50px;
+          width: 50px; } }
+      @media only screen and (min-width: 481px) and (max-width: 768px) {
+        .redes .icono span {
+          height: 50px;
+          width: 50px; } }
       .redes .icono span i {
         font-size: 25px;
         line-height: 60px; }
+        @media only screen and (max-width: 480px) {
+          .redes .icono span i {
+            font-size: 20px;
+            line-height: 50px; } }
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+          .redes .icono span i {
+            font-size: 20px;
+            line-height: 50px; } }
     .redes .icono:hover span {
       color: #F4F4F2;
       background: #037E86; }

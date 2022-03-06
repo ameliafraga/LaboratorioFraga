@@ -1,16 +1,13 @@
 /*CERTIFICACIONES*/
 .certificaciones {
+	h3{
+		@include tituloTres;
+	}
 	p {
 		padding: 24px 32px;
 		font: $regular-font;
 	}
-	h2 {
-		color: $main-color;
-		font-size: 2rem;
-		padding-top: 20vh;
-		font-family: 'Quicksand', sans-serif;
-		font-weight: 800;
-	}
+	
 }
 .logos {
 	display: flex;
@@ -19,7 +16,18 @@
 	justify-content: space-around;
 	padding-bottom: 5em;
 	--animate-duration: 3s;
+	@include tablet{
+		flex-direction: column;
+		align-items: center;
+		}
 	img {
-		padding: 0.5em;
+		padding: 0.5rem;
+		@include tablet{
+			max-width: 50%;
+			padding-bottom: 0.5rem;
+			}
 	}
 }
+
+
+

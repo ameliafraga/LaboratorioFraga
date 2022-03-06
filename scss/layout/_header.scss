@@ -1,8 +1,6 @@
 /*BARRA DE NAVEGACION*/
 
 #menuNavegacion {
-	display: flex;
-	justify-content: right;
 	text-transform: uppercase;
 	a {
 		&:hover {
@@ -10,4 +8,11 @@
 			background-color: $secondary-color;
 		}
 	}
+}
+
+.navbar .logo{
+	@include celular{
+	width: 150%;
+	height: auto;
+}
 }

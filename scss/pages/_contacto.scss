@@ -1,11 +1,7 @@
 /*CONTACTO*/
 .contactoContenido {
-	h2 {
-		color: $main-color;
-		font-size: 2rem;
-		padding-top: 20vh;
-		font-family: 'Quicksand', sans-serif;
-		font-weight: 800;
+	h3 {
+		@include tituloTres;
 	}
 	p {
 		padding: 10px 32px;
@@ -19,19 +15,26 @@
 	}
 }
 .wrapperContacto {
-	padding: 16px 128px;
+	padding: 16px 180px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	@include celular{
+		grid-template-columns: 1fr;
+		padding: 24px 10px;
+	}
+	@include tablet{
+		grid-template-columns: 1fr;
+		}  	
 }
 .contactoContainer {
-	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+	@include bordes;
 	padding: 1.5em;
 }
 .formContacto {
 	background-color: $main-color;
 	padding: 1.5em;
 	font: $regular-font;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	@include bordes;
 	form {
 		input {
 			width: 100%;
@@ -50,22 +53,26 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	border: 5px solid $main-color;
+	@include bordes;
 	font-size: 1.2em;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	@include celular{
+			font-size: 1rem;
+		}
+	@include tablet{
+		font-size: 1em;
+		}
 }
 .datosContactoLista {
 	li {
 		list-style: none;
 		padding-bottom: 20px;
+		padding-top: 10px;
 		font: $regular-font;
 	}
 }
 .boton {
+	@extend %boton;
 	background: $secondary-color;
-	border: 0;
-	text-transform: uppercase;
-	padding: 1em;
 	color: $bg-color;
 	&:hover {
 		background-color: $bg-color;

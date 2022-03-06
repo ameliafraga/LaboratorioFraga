@@ -13,21 +13,40 @@
 	font-weight: 600;
 }
 #botonInfo {
+	@extend %boton;
 	background: $secondary-color;
-	border: 0;
-	text-transform: uppercase;
-	padding: 1em;
 	color: $bg-color;
-	align-items: center;
 	&:hover {
 		background-color: $bg-color;
 		color: black;
 	}
 }
 #cartaIndividual {
-	border: 1px solid rgb(95, 94, 94);
-	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+	@include bordes;
 }
 #cartas {
 	padding: 24px 32px 5em 32px;
+}
+
+.cards{
+	@include celular{
+		grid-template-columns: 1fr;
+		padding: 20px;
+		grid-gap: 40px;
+	}
+	@include tablet{
+		grid-template-columns: repeat(2, 1fr);
+		padding: 20px;
+		grid-gap: 40px;
+	}
+}
+.details li{
+	@include celular{
+		line-height: 1.1;
+		padding: 8px;
+		}
+	@include tablet{
+		line-height: 1.1;
+		padding: 8px;
+	}
 }

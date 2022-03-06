@@ -1,4 +1,4 @@
-/* Media query para celular*/
+/* Media query para celular
 
 @media only screen and (max-width:480px) {
     #menuNavegacion{
@@ -19,13 +19,13 @@
     .lab h2{
         font-size: 1em;
     }
-/*Nosotros*/
+
 .wrapperNosotros{
     grid-template-columns: 1fr;
     font-size: 0.8em;
     }
 
-/*servicios*/
+
     .cards{
         grid-template-columns: 1fr;
         padding: 20px;
@@ -37,14 +37,13 @@
     }
 
 
-/*contacto*/
     .wrapperContacto{
         grid-template-columns: 1fr;
     }
     .datosContacto{
         font-size: 1em;
     }
-/*footer*/
+
     #novedadesFooter{
         display: none;
     }
