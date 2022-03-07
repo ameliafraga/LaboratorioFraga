@@ -9,8 +9,6 @@
 		font: $regular-font;
 	}
 }
-
-
 .cards{
 	@include celular{
 	grid-template-columns: 1fr;

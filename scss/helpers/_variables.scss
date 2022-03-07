@@ -41,9 +41,6 @@ $regular-font: normal 18px 'Quicksand', sans-serif;
 	  @content;
 	}
   }
-  
-
-
 
 %boton{
 	border: 1px solid #888;
@@ -51,23 +48,11 @@ $regular-font: normal 18px 'Quicksand', sans-serif;
 	padding: 1em;
 	align-items: center;
 }   
-
-
-   
-	
-    
-    
-	
-
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
-
-
-
 p {
     letter-spacing: 0.05em;
     line-height: 1.5;
