@@ -13,16 +13,10 @@ p {
   letter-spacing: 0.05em;
   line-height: 1.5; }
 
-<<<<<<< HEAD
 /*BARRA DE NAVEGACION*/
 #menuNavegacion{
-
     text-transform: uppercase;
 }
-=======
-main {
-  background-color: #F4F4F2; }
->>>>>>> scssmixins
 
 /*BARRA DE NAVEGACION*/
 #menuNavegacion {
@@ -367,7 +361,6 @@ main {
     justify-content: center;
     flex-direction: column;
     position: relative;
-<<<<<<< HEAD
     z-index:2;
 }
   
@@ -539,39 +532,3 @@ main {
         font-size: 0.5em;
     }
 }
-=======
-    z-index: 2; }
-    .redes .icono span {
-      position: relative;
-      z-index: 2;
-      height: 60px;
-      width: 60px;
-      display: block;
-      background: #7EC544;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      text-align: center;
-      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-      @media only screen and (max-width: 480px) {
-        .redes .icono span {
-          height: 50px;
-          width: 50px; } }
-      @media only screen and (min-width: 481px) and (max-width: 768px) {
-        .redes .icono span {
-          height: 50px;
-          width: 50px; } }
-      .redes .icono span i {
-        font-size: 25px;
-        line-height: 60px; }
-        @media only screen and (max-width: 480px) {
-          .redes .icono span i {
-            font-size: 20px;
-            line-height: 50px; } }
-        @media only screen and (min-width: 481px) and (max-width: 768px) {
-          .redes .icono span i {
-            font-size: 20px;
-            line-height: 50px; } }
-    .redes .icono:hover span {
-      color: #F4F4F2;
-      background: #037E86; }
->>>>>>> scssmixins
