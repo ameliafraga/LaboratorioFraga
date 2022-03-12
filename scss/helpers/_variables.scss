@@ -1,0 +1,62 @@
+$main-color:#7EC544;
+$secondary-color:#037E86;
+$bg-color:#F4F4F2;
+$regular-font: normal 18px 'Quicksand', sans-serif;
+@mixin tituloUno {
+	font-family: 'Tahoma', sans-serif;
+	font-size: 5rem;
+	font-weight: 900;
+	color: $main-color;
+}
+@mixin tituloDos {
+    font-family: 'Tahoma', sans-serif;
+	font-weight: 300;
+	color: black;
+}
+@mixin tituloTres {
+    color: $main-color;
+	font-size: 2rem;
+	padding: 20vh 32px 24px 32px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 800;
+}
+@mixin tituloCuatro{
+    padding-bottom: 10px;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1.2rem;
+		font-weight: 800;
+} 
+@mixin bordes{
+    border: 1px solid rgb(95, 94, 94);
+	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+@mixin celular{
+	@media only screen and (max-width: 480px) {
+	  @content;
+	}
+  }
+  
+  @mixin tablet{
+	@media only screen and (min-width: 481px) and (max-width:768px) {
+	  @content;
+	}
+  }
+
+%boton{
+	border: 1px solid #888;
+	text-transform: uppercase;
+	padding: 1em;
+	align-items: center;
+}   
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+p {
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+main{
+    background-color: $bg-color;
+}

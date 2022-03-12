@@ -1,0 +1,42 @@
+/*INDEX*/
+.lab {
+	height: 100vh;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(../Imagenes/laboratorio6.jpeg);
+	background-size: cover;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	.banner {
+		grid-column: 7 / 11;
+		grid-row: 3 / 7;
+		@include celular{
+			grid-column: 2 / 7 ;
+			grid-row: 6 / 9 ;
+		}
+		@include tablet{
+			grid-column: 2 / 7 ;
+			grid-row: 5 / 7 ;
+		}
+	}
+	h1 {
+	@include tituloUno;
+	@include celular{
+		font-size: 2.5rem
+	}
+	@include tablet{
+		font-size: 3rem
+	}
+	}
+	
+	h2 {
+	@include tituloDos;
+	@include celular{
+		font-size: 1rem
+	}
+	@include tablet{
+		font-size: 1rem
+	}
+	}
+}
+

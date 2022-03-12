@@ -1,0 +1,52 @@
+#tituloCarta {
+	font-family: 'Quicksand', sans-serif;
+	color: $secondary-color;
+	font-size: 1.3em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+#contenidoCartas {
+	font: $regular-font;
+}
+#itemsCarta {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+}
+#botonInfo {
+	@extend %boton;
+	background: $secondary-color;
+	color: $bg-color;
+	&:hover {
+		background-color: $bg-color;
+		color: black;
+	}
+}
+#cartaIndividual {
+	@include bordes;
+}
+#cartas {
+	padding: 24px 32px 5em 32px;
+}
+
+.cards{
+	@include celular{
+		grid-template-columns: 1fr;
+		padding: 20px;
+		grid-gap: 40px;
+	}
+	@include tablet{
+		grid-template-columns: repeat(2, 1fr);
+		padding: 20px;
+		grid-gap: 40px;
+	}
+}
+.details li{
+	@include celular{
+		line-height: 1.1;
+		padding: 8px;
+		}
+	@include tablet{
+		line-height: 1.1;
+		padding: 8px;
+	}
+}

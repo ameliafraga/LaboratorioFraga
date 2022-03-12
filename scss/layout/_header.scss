@@ -1,0 +1,17 @@
+/*BARRA DE NAVEGACION*/
+
+#menuNavegacion {
+	text-transform: uppercase;
+	a {
+		&:hover {
+			color: $bg-color;
+			background-color: $secondary-color;
+		}
+	}
+}
+.navbar .logo{
+	@include celular{
+	width: 150%;
+	height: auto;
+}
+}

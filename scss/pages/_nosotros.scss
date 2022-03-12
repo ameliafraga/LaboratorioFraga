@@ -1,0 +1,32 @@
+/*NOSOTROS*/
+
+.quienesSomos h3 {
+	@include tituloTres;
+	}
+
+.wrapperNosotros {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 2fr;
+	height: 50vh;
+	padding-bottom: 60vh;
+	@include celular{
+			grid-template-columns: 1fr;
+			font-size: 0.8rem;
+			height: 100vh;
+	}
+	@include tablet{
+        grid-template-columns: 1fr;
+        height: 120vh;
+    }
+}
+.nosotrosIzquierda {
+	padding: 0px 32px;
+	p {
+		padding-bottom: 0px;
+		font: $regular-font;
+	}
+}
+.nosotrosDerecha {
+	padding-right: 24px;
+}

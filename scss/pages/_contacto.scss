@@ -1,0 +1,81 @@
+/*CONTACTO*/
+.contactoContenido {
+	h3 {
+		@include tituloTres;
+	}
+	p {
+		padding: 10px 32px;
+		font: $regular-font;
+	}
+}
+#datosFooter {
+	p {
+		font: $regular-font;
+		margin: 0 0 5px 0;
+	}
+}
+.wrapperContacto {
+	padding: 16px 180px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	@include celular{
+		grid-template-columns: 1fr;
+		padding: 24px 10px;
+	}
+	@include tablet{
+		grid-template-columns: 1fr;
+		}  	
+}
+.contactoContainer {
+	@include bordes;
+	padding: 1.5em;
+}
+.formContacto {
+	background-color: $main-color;
+	padding: 1.5em;
+	font: $regular-font;
+	@include bordes;
+	form {
+		input {
+			width: 100%;
+			padding: 0.7em;
+			border: none;
+		}
+		textarea {
+			width: 100%;
+			padding: 0.7em;
+			border: none;
+		}
+	}
+}
+.datosContacto {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	@include bordes;
+	font-size: 1.2em;
+	@include celular{
+			font-size: 1rem;
+		}
+	@include tablet{
+		font-size: 1em;
+		}
+}
+.datosContactoLista {
+	li {
+		list-style: none;
+		padding-bottom: 20px;
+		padding-top: 10px;
+		font: $regular-font;
+	}
+}
+.boton {
+	@extend %boton;
+	background: $secondary-color;
+	color: $bg-color;
+	&:hover {
+		background-color: $bg-color;
+		color: black;
+	}
+}
