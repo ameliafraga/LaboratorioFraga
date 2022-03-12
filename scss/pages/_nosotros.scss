@@ -26,6 +26,28 @@
 		padding-bottom: 0px;
 		font: $regular-font;
 	}
+	a {
+	outline: none; 
+	text-decoration: none; 
+	padding: 2px 1px 0;
+		&:link {
+		font-weight: bold;
+		}
+		&:visited { 
+		color: $main-color; 
+		}
+		&:focus { 
+		border-bottom: 1px solid; 
+		font-weight: bold; 
+		}
+		&:hover { 
+		border-bottom: 1px solid; 
+		}
+		&:active { 
+		background: $secondary-color; 
+		color: $bg-color; 
+		}
+	}	
 }
 .nosotrosDerecha {
 	padding-right: 24px;
